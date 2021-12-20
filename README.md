@@ -1,6 +1,8 @@
 # Logfind: find where log messages come from in source code
 
-Logfind takes a log or error message and a directory to search in, and prints out all the strings and template strings that could emit that message:
+Logfind takes a log or error message and a directory to search in, and prints out all the strings and template strings that could have emitted that message.
+
+It's syntax-aware (using [tree-sitter](https://tree-sitter.github.io/tree-sitter/)), recognizes string interpolation, etc.
 
 ```
 $ logfind \
