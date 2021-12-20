@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+yarn --frozen-lockfile
+
+yarn run tsc
+yarn run nexe built/main.js --build --verbose --output built/logfind

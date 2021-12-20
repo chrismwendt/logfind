@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+yarn run ts-node-dev --respawn src/main.ts --directory "$HOME/github.com/mochajs/mocha" --string "Timeout of NaNms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves."
